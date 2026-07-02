@@ -49,11 +49,12 @@ function itemClickHandler(e) {
     selectedItem.innerText = e.target.innerText
 
     if(selectedItem.innerText === 'Windows x64'){
-        console.log('ele selecionou para Windows');
+        //console.log('ele selecionou para Windows');
+        window.location.href = 'https://github.com/higorfernandoeliseo/PasswordGApp/releases/download/v1.1.5/passwordg-setup-x64.exe'
     }else if(selectedItem.innerText === 'Linux'){
-        console.log('ele selecionou para Linux');
+        //console.log('ele selecionou para Linux');
     }else{
-        console.log('ele selecionou para mac os!');
+        //console.log('ele selecionou para mac os!');
     }
 
     items.forEach((item) => item.classList.remove('active'))
