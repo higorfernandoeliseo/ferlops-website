@@ -442,7 +442,8 @@ section#policy_privacy {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 60px 20px;
+    min-height: 100vh;
     background-color: #f4f4f4;
 }
 
@@ -451,14 +452,14 @@ section#policy_privacy div.hero-content {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 800px;
-    margin-top: 40px;
+    max-width: 800px;
 }
 
 section#policy_privacy div.hero-content h1 {
     font-size: 37px;
     margin: 14px 0;
     color: #29241e;
+    text-align: center;
 }
 
 section#policy_privacy div.hero-content h2 {
