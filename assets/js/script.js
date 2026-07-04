@@ -48,7 +48,7 @@ function itemClickHandler(e) {
     e.stopPropagation()
     selectedItem.innerText = e.target.innerText
 
-    if(selectedItem.innerText === 'Windows x64'){
+    if(selectedItem.innerText === 'Windows 10+ (64 bits)'){
         //console.log('ele selecionou para Windows');
         window.location.href = 'https://github.com/higorfernandoeliseo/PasswordGApp/releases/download/v1.1.5/passwordg-setup-x64.exe'
     }else if(selectedItem.innerText === 'Linux'){
