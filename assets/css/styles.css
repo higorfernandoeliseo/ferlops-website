@@ -125,16 +125,24 @@ section#home div.hero-content img {
 }
 
 section#home div.hero-content button#download {
-    margin: 40px 0;
-    padding: 10px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding: 15px 17px;
     transition: all 0.13s;
     border: 1px solid transparent;
     border-radius: 12px;
     cursor: pointer;
     font-family: 'inter';
     font-weight: bold;
+    font-size: 17px;
     background-color: #29241e;
     color: #fff;
+}
+
+div#infoapp span {
+    margin: 0px 10px;
+    font-size: 14px;
+    color: #61584e;
 }
 
 section#home div.hero-content button#download a {
@@ -249,19 +257,27 @@ article.card-app div.buttons {
 .download-wrapper {
     position: relative;
     min-width: 190px;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .dropdown-btn {
-    padding: 8px 10px;
+    padding: 10px 22px;
     background-color: #29241e;
-    border-radius: 5px;
+    border-radius: 12px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
     overflow: hidden;
     color: #fff;
+}
+
+.dropdown-btn span {
+    font-weight: bold;
+}
+
+.dropdown-btn span i {
+    margin-left: 14px;
 }
 
 .dropdown-menu {
@@ -323,6 +339,10 @@ article.card-app button#downloadBtn:hover {
     background-color: #000;
     border-color: #000;
     transition: all ease .3s;
+}
+
+section#faq {
+    background-color: #eee7dd;
 }
 
 section#faq div.hero-content {
@@ -502,8 +522,8 @@ section#policy_privacy div.hero-content p {
 footer#footer {
     height: 70px;
     padding: 1rem;
-    background-color: #26251e;
-    color: #FFF;
+    background-color: #312519;
+    color: #b0a795;
     font-family: 'inter';
     display: flex;
     justify-content: center;
@@ -516,7 +536,7 @@ footer#footer p {
 
 footer#footer p a {
     text-decoration: none;
-    color: #8f8f80;
+    color: #fff;
 }
 
 footer#footer p a:hover {
