@@ -539,6 +539,7 @@ footer#footer p a {
     color: #fff;
 }
 
+
 footer#footer p a:hover {
     text-decoration: underline;
     text-underline-offset: 0.2rem;
