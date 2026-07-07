@@ -1,0 +1,518 @@
+
+@font-face {
+    font-family: 'inter';
+    src: url('fonts/Inter-Regular.woff2');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'inter';
+    src: url('fonts/Inter-Medium.woff2');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'inter';
+    src: url('fonts/Inter-Bold.woff2');
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+}
+
+:root {
+    --corMarron: #312519;
+    --corBege: #f4f4f4;
+    --corTexto-1: #29241e;
+    --corTexto-2: #976e39;
+    --corTexto-3: #61584e;
+    --corHoverMenu: #e4e4e4;
+    --corPreto: #000;
+    --bordaEscura: #c7c1b9;
+    --corMarronEscuro: #312519;
+    --corBegeMedio: #eee7dd;
+    --corBegeClaro: #f5f1e5;
+    --corBoxModos: #f2f1ed;
+    --corAzul-1: #197eff;
+    --corVerdeEscuro: #114a5d;
+    --corAzul-2: #143159;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--corBegeMedio);
+}
+
+.interface {
+    max-width: 1380px;
+    padding: 0 4%;
+    margin: 0 auto;
+}
+
+button {
+    background-color: var(--corAzul-2);
+    border: 2px solid var(--corAzul-2);
+    border-radius: 8px;
+    color: var(--corBege);
+    cursor: pointer;
+    font-size: 0.90rem;
+    transition: .5s;
+}
+
+button:hover {
+    background-color: var(--corPreto);
+    color: var(--corBege);
+    border-color: var(--corPreto);
+}
+
+h2.title-section {
+    font-size: 4rem;
+    color: var(--corTexto-1);
+    padding-bottom: 20px;
+}
+
+h2.title-section span {
+    color: var(--corTexto-2);
+}
+
+h3 {
+    color: var(--corTexto-1);
+}
+
+/* Estilo do cabeçalho */
+
+header {
+    background-color: transparent;
+    padding: 17px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
+header.rolled {
+    background-color: var(--corBege);
+    box-shadow: 0 8px 4px rgba(0, 0, 0, 0.06);
+    transition: .3s;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logotipo-head img {
+    max-width: 150px;
+}
+
+header nav.menu-desktop ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 36px;
+}
+
+header nav.menu-desktop a {
+    color: var(--corTexto-1);
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: bold;
+}
+
+header nav.menu-desktop a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-thickness: 1.5px;
+    text-decoration-color: var(--corHoverMenu);
+}
+
+header nav.menu-desktop-noresponsible ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 36px;
+}
+
+header nav.menu-desktop-noresponsible a {
+    color: var(--corTexto-1);
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: bold;
+}
+
+header nav.menu-desktop-noresponsible a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-thickness: 1.5px;
+    text-decoration-color: var(--corHoverMenu);
+}
+
+header nav.menu-desktop a button {
+    width: 94px;
+    height: 38px;
+    font-weight: bold;
+}
+
+/* Estilo do menu mobile */
+
+.btn-menu-mobile {
+    display: none;
+}
+
+.btn-menu-mobile i {
+    font-size: 2rem;
+    color: var(--corMarron);
+}
+
+.menu-mobile.abrir-menu {
+    left: 0;
+    pointer-events: initial;
+}
+
+.menu-mobile {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--corBege);
+    text-align: right;
+    padding: 32px 0;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.menu-mobile ul {
+    list-style: none;
+    padding: 64px 0;
+}
+
+.menu-mobile ul li a {
+    color: var(--corMarron);
+    font-size: 1.4rem;
+    text-decoration: none;
+    display: block;
+    padding: 24px;
+    transition: .2s;
+    outline: none;
+}
+
+.menu-mobile ul li a:hover {
+    background-color: var(--corBegeMedio);
+    color: var(--corMarron);
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-thickness: 1.5px;
+    text-decoration-color: var(--corTexto-2);
+}
+
+.menu-mobile .icon-x {
+    font-size: 2rem;
+    color: var(--corMarron);
+    padding: 24px;
+}
+
+/* Estilo da hero */
+
+section.hero {
+    background-color: var(--corBege);
+    padding-top: 144px;
+    padding-bottom: 20px;
+}
+
+.hero > .interface {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
+
+.hero .img-hero {
+    line-height: 0;
+}
+
+.hero .img-hero img {
+    width: 370px;
+    background-color: rgba(210, 200, 190, 0.4);
+    border: none;
+    border-bottom: 1px solid var(--bordaEscura);
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06)
+}
+
+.hero .txt-hero h1 {
+    font-size: 3rem;
+    color: var(--corTexto-1);
+}
+
+.hero .txt-hero h1 span {
+    font-weight: normal;
+    color: var(--corTexto-2);
+}
+
+.hero .txt-hero p {
+    color: var(--corTexto-3);
+    line-height: 1.6;
+    font-size: 1.2rem;
+    margin: 24px 0;
+}
+
+.hero .txt-hero button {
+    padding: 10px 13px;
+    font-weight: bold;
+}
+
+/* Estilo do hero - politica de privacidade */
+
+section.hero-privacy {
+    background-color: var(--corBege);
+    padding-top: 144px;
+    padding-bottom: 20px;
+}
+
+.hero-privacy > .interface {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 120px;
+    max-width: 800px;
+}
+
+.hero-privacy .txt-policy h1 {
+    font-size: 3rem;
+    color: var(--corTexto-1);
+}
+
+.hero-privacy .txt-policy p {
+    color: var(--corTexto-3);
+    line-height: 1.6;
+    font-size: 1rem;
+    margin: 24px 0;
+}
+
+/* Estilo como funciona */
+
+section.como-funciona {
+    padding: 80px 0;
+}
+
+.como-funciona > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 96px;
+}
+
+.como-funciona .txt-comofunciona p {
+    color: var(--corTexto-3);
+    text-align: justify;
+    line-height: 1.6;
+    margin: 24px 0;
+}
+
+.como-funciona .img-comofunciona img{
+    width: 270px;
+}
+
+/* Estilo da seção modos */
+
+section.modo-senha {
+    padding: 80px 0;
+    background-color: var(--corBege);
+}
+
+
+.modo-senha article {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    width: 100%;
+    margin: 34px 0;
+}
+
+.modo-senha .box-mode {
+    background-color: rgba(238, 231, 221, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    padding: 24px;
+    border-radius: 12px;
+}
+
+.box-mode h3 {
+    color: var(--corTexto-1);
+    margin: 12px 0;
+}
+
+.box-mode p {
+    color: var(--corTexto-3);
+    text-align: justify;
+    margin: 24px 0;
+}
+
+/* Estilo do perguntas frequentes (FAQ) */
+
+section.peguntasfreq {
+    padding: 80px 0; 
+}
+
+.peguntasfreq > .interface {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.peguntasfreq p.subtitle {
+    color: var(--corTexto-2);
+    text-align: justify;
+    line-height: 1.6;
+    margin: 24px 0;
+}
+
+#box-accordions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 700px;
+}
+
+#box-accordions .accordion {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 12px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    border-bottom: 1px solid var(--bordaEscura);
+    outline: none;
+}
+
+.accordion .accordion-header {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.accordion .accordion-header span {
+    max-width: 100%;
+    white-space: normal;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: clip;
+    color: var(--corTexto-1);
+    font-weight: bold;
+}
+
+.accordion .accordion-header i {
+    color: var(--corPreto);
+}
+
+.accordion .accordion-body {
+    color: var(--corTexto-3);
+    font-size: 1rem;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.accordion .accordion-body p {
+    line-height: 1.6;
+}
+
+.accordion .accordion-body p a {
+    color: var(--corTexto-2);
+}
+
+.accordion .accordion-body.active {
+    margin: 10px;
+    height: auto;
+    opacity: 1;
+}
+
+/* Estilo do download */
+
+section.download {
+    background-color: var(--corMarron);
+    padding: 80px 0;
+}
+
+.download > .interface {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.download h3 {
+    color: var(--corBege);
+    font-size: 2rem;
+    margin: 12px 0;
+}
+
+.download h3 span {
+    color: var(--corTexto-2);
+}
+
+.download .tags-info {
+    margin-bottom: 50px;
+}
+
+.download .tags-info span {
+    background-color: var(--corTexto-3);
+    color: var(--corBege);
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid rgba(238, 231, 221, 0.06);
+    border-radius: 60px;
+    margin: 0 5px;
+}
+
+.download p {
+    color: var(--corBegeMedio);
+    margin: 24px 0;
+}
+
+.download button {
+    background-color: var(--corBege);
+    color: var(--corTexto-1);
+    border-color: var(--corBege);
+    padding: 10px 13px;
+    font-weight: bold;
+}
+
+.download button a {
+    color: var(--corTexto-1);
+    text-decoration: none;
+}
+
+/* Estilo do rodapé */
+
+footer {
+    padding: 40px 0;
+    color: var(--corTexto-1);
+}
+
+footer > .interface {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p {
+    line-height: 1.6;
+}
+
+footer a {
+    text-underline-offset: 0.3rem;
+    text-decoration-color: var(--bordaEscura);
+    color: var(--corMarron);
+}

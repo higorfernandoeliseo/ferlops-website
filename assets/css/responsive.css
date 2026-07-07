@@ -1,0 +1,87 @@
+@media (max-width: 1000px) {
+
+    /* Estilo do menu */
+
+    h2.title-section {
+        font-size: 2rem;
+    }
+
+    .menu-desktop {
+        display: none;
+    }
+
+    /* Estilo da hero */
+
+    section.hero {
+        background-color: var(--corBege);
+        padding-bottom: 20px;
+    }
+
+    .hero > .interface {
+        text-align: center;
+        gap: 120px;
+        flex-direction: column;
+    }
+
+    .hero .img-hero {
+        line-height: 0;
+    }
+
+    .hero .img-hero img {
+        width: 320px;
+        background-color: rgba(210, 200, 190, 0.4);
+        border: none;
+        border-bottom: 1px solid var(--bordaEscura);
+        border-radius: 12px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06)
+    }
+
+    .hero .txt-hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero .txt-hero p {
+        font-size: 1rem;
+    }
+
+    .hero .txt-hero button {
+        padding: 10px 13px;
+        font-weight: bold;
+    }
+
+
+    /* Estilo como funciona */
+
+    .como-funciona > .interface {
+        flex-direction: column;
+    }
+
+    .como-funciona .img-comofunciona img{
+        width: 230px;
+    }
+
+    /* Estilo do download */
+
+    .download > .interface { 
+        text-align: center;
+    }
+    .download .tags-info span {
+        display: flex;
+        margin: 10px 0;
+    }
+
+    /* Estilo do rodapé */
+
+    footer > .interface {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        gap: 32px;
+        text-align: center;
+    }
+
+    .btn-menu-mobile {
+        display: block;
+    }
+
+}
