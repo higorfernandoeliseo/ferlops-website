@@ -357,7 +357,8 @@ section.modo-senha {
 /* Estilo do perguntas frequentes (FAQ) */
 
 section.peguntasfreq {
-    padding: 80px 0; 
+    padding: 80px 0;
+    border-radius: 8px;
 }
 
 .peguntasfreq > .interface {
