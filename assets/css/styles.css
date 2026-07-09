@@ -31,15 +31,16 @@
     --corTexto-2: #976e39;
     --corTexto-3: #61584e;
     --corHoverMenu: #e4e4e4;
-    --corPreto: #000;
+    --corPreto: #1c1c28;
     --bordaEscura: #c7c1b9;
     --corMarronEscuro: #312519;
     --corBegeMedio: #eee7dd;
     --corBegeClaro: #f5f1e5;
     --corBoxModos: #f2f1ed;
-    --corAzul-1: #197eff;
+    --corAzul-1: #174290;
     --corVerdeEscuro: #114a5d;
     --corAzul-2: #143159;
+    --corBranco: #fffefa;
 }
 
 html {
@@ -57,8 +58,8 @@ body {
 }
 
 button {
-    background-color: var(--corAzul-2);
-    border: 2px solid var(--corAzul-2);
+    background-color: var(--corAzul-1);
+    border: 2px solid var(--corAzul-1);
     border-radius: 8px;
     color: var(--corBege);
     cursor: pointer;
@@ -238,7 +239,7 @@ section.hero {
 }
 
 .hero .img-hero img {
-    width: 370px;
+    width: 450px;
     background-color: rgba(210, 200, 190, 0.4);
     border: none;
     border-bottom: 1px solid var(--bordaEscura);
@@ -358,7 +359,6 @@ section.modo-senha {
 
 section.peguntasfreq {
     padding: 80px 0;
-    border-radius: 8px;
 }
 
 .peguntasfreq > .interface {
@@ -444,7 +444,7 @@ section.peguntasfreq {
 /* Estilo do download */
 
 section.download {
-    background-color: var(--corMarron);
+    background-color: var(--corPreto);
     padding: 80px 0;
 }
 
@@ -455,13 +455,14 @@ section.download {
 }
 
 .download h3 {
-    color: var(--corBege);
+    color: var(--corBranco);
     font-size: 2rem;
     margin: 12px 0;
+    font-weight: normal;
 }
 
 .download h3 span {
-    color: var(--corTexto-2);
+    font-weight: bold;
 }
 
 .download .tags-info {
@@ -469,8 +470,7 @@ section.download {
 }
 
 .download .tags-info span {
-    background-color: var(--corTexto-3);
-    color: var(--corBege);
+    color: var(--corBranco);
     font-weight: bold;
     padding: 10px;
     border: 1px solid rgba(238, 231, 221, 0.06);
