@@ -371,6 +371,7 @@ article.card {
     cursor: pointer;
     margin-top: 20px;
     transition: all 0.3s;
+    outline: none;
 }
 
 div.grid-team article.card h3 {
@@ -399,6 +400,7 @@ article.card button {
     font-weight: 700;
     cursor: pointer;
     transition: all 0.3s;
+    outline: none;
 }
 
 article.card h3 {
@@ -469,6 +471,7 @@ div.grid-solutions article.card {
     cursor: pointer;
     margin-top: 20px;
     transition: all 0.3s;
+    outline: none;
 }
 
 div.grid-solutions article.card h3 {
@@ -529,6 +532,7 @@ div.grid-solutions article.card button {
     cursor: pointer;
     transition: all 0.3s;
     font-weight: 700;
+    outline: none;
 }
 
 div.grid-solutions article.card button:hover {
@@ -619,6 +623,7 @@ div#box-accordions .accordion {
     font-size: 1rem;
     cursor: pointer;
     padding: 10px;
+    outline: none;
 }
 
 .accordion .accordion-header span {
@@ -641,6 +646,7 @@ div#box-accordions .accordion {
     opacity: 0;
     height: 0;
     overflow: hidden;
+    outline: none;
 }
 
 .accordion .accordion-body p {
