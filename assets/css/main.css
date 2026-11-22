@@ -43,6 +43,7 @@
 
 :root {
     --bg-base: #0a0c10;
+    --bg-header-base: rgba(10, 12, 16, 0.6);
     --bg-card: #151a23;
     --border-1: #242b38;
     --corTexto1: #fff;
@@ -82,12 +83,13 @@ h1.title-section {
 /* Estilo do cabeçalho */
 
 header {
-    background: var(--bg-base);
+    background: var(--bg-header-base);
     padding: 17px 0;
     position: fixed;
     width: 100%;
     z-index: 9999;
     border-bottom: 1px solid var(--border-1);
+    backdrop-filter: blur(8px);
 }
 
 header > .interface {
