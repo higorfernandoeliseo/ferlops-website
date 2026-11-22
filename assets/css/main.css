@@ -535,6 +535,7 @@ div.grid-solutions article.card button {
     outline: none;
 }
 
+
 div.grid-solutions article.card button:hover {
     background-color: var(--accent);
 
@@ -544,6 +545,18 @@ div.grid-solutions article.card button:hover {
 div.grid-solutions article.card a button#downloadBtn,
 div.grid-solutions article.card a button#downloadBetabtn {
     width: 100%;
+}
+
+div.grid-solutions article.card a button#downloadBetabtn:hover {
+    border: 1px solid var(--border-1);
+    background-color: var(--bg-card);
+    padding: 10px;
+    border-radius: 8px;
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 700;
+    outline: none;
 }
 
 div.grid-solutions article.card ul li {
