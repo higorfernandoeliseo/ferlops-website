@@ -2,18 +2,9 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="msvalidate.01" content="C03240EDA5181F383E6FD6F47CE23DA3" />
-    <meta name="description" content="A ferlOps é uma fornecedora de ferramentas de ponta especializada em criação de senhas seguras e segurança online.">
-    <meta name="keywords" content="ferlops, password, generator, passwordg, ferlops tecnologia, gerador de senhas, gerador, passwordG">
-    <meta name="author" content="Igor Eliseo">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ferlops.com.br/">
-    <meta property="og:title" content="ferlOps Tecnologia">
-    <meta property="og:description" content="A ferlOps Password é uma ferramenta de ponta especializada em criação de senhas seguras.">
-    <meta property="og:image" content="https://ferlops.com.br/assets/images/logo-ferlops.webp">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ferlOps : Sua Identidade Digital, Protegida de Verdade.</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>ferlOps - Soluções em Segurança Open Source</title>
+    <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/lucide.css">
 </head>
@@ -21,18 +12,17 @@
     <header id="header">
         <div class="interface">
             <section class="logotipo-head">
-                <img src="assets/images/logo-ferlops.webp" alt="Logotipo do FerlOps">
+                <img src="assets/images/logo-ferlops.webp" alt="logotipo da FerlOps">
             </section>
-
 
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#hero">Ínicio</a></li>
-                    <li><a href="#whytrustus">Por que confiar?</a></li>
-                    <li><a href="#features">Rercursos</a></li>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#solucoes">Soluções</a></li>
+                    <li><a href="https://github.com/higorfernandoeliseo/PasswordGApp/blob/main/README.md" target="_blank">Documentação</a></li>
                     <li><a href="#faq">FAQ</a></li>
-                    <li><a href="https://github.com/higorfernandoeliseo/PasswordGApp" target="_blank">GitHub</a></li>
-                    <li><a href="#download"><button>Baixar</button></a></li>
+                    <li><a target="_blank" href="https://github.com/higorfernandoeliseo/PasswordGApp">GitHub</a></li>
+                    <li><a href="#theteam"><button class="contact-btn">A Equipe</button></a></li>
                 </ul>
             </nav>
 
@@ -43,186 +33,247 @@
             <nav class="menu-mobile" id="menu-mobile">
                 <i class="icon-x"></i>
                 <ul>
-                    <li><a href="#hero">Ínicio</a></li>
-                    <li><a href="#whytrustus">Por que confiar?</a></li>
-                    <li><a href="#features">Rercursos</a></li>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#solucoes">Soluções</a></li>
+                    <li><a href="https://github.com/higorfernandoeliseo/PasswordGApp/blob/main/README.md">Documentação</a></li>
                     <li><a href="#faq">FAQ</a></li>
-                    <li><a href="https://github.com/higorfernandoeliseo/PasswordGApp" target="_blank">GitHub</a></li>
-                    <li><a href="#download">Baixar</a></li>
+                    <li><a target="_blank" href="https://github.com/higorfernandoeliseo/PasswordGApp">GitHub</a></li>
+                    <li><a href="#theteam"><button class="contact-btn">A Equipe</button></a></li>
                 </ul>
             </nav>
+
         </div>
     </header>
 
     <main>
-
-        <section class="hero" id="hero">
+        <section class="hero" id="inicio">
             <div class="interface">
 
                 <div class="txt-hero">
-                    <h1>Suas senhas seguras de verdade <span>100% offline, zero nuvem.</span></h1>
-                    <p>Conheça o FerlOps PasswordG: o gerador de senha offline que une segurança matemática extrema e usabilidade. Gere senhas seguras em um clique.</p>
-                    <a href="https://github.com/higorfernandoeliseo/PasswordGApp/releases/download/v1.1.5/passwordg-setup-x64.exe" target="_blank"><button>Baixar grátis para Windows</button></a>
+                    <h1>Desenvolvemos software <span class="highlight">open source</span> focado em <span class="highlight">segurança</span> e privacidade.</h1>
+                    <p>Soluções independentes de segurança construidas com foco em execução local, transparência e privacidade. Conheça nossas ferramentas como <strong>FerlOps PasswordG</strong>.</p>
+
+                    <a href="#solucoes"><button>Explore nossas ferramentas</button></a>
                 </div>
 
-                <div class="img-hero">
-                    <img src="assets/images/passwordg-interface.png" alt="">
+                <div id="preview-software">
+                    <aside>
+                        <h2 class="title-application">FerlOps PasswordG 1.1.5 (Simulação)</h2>
+                        <p class="description">Gerador de senhas 100% offline com entropia local via CSPRNG, sem nuvem, sem banco de dados e com limpeza automática da área de transfêrencia.</p>
+                    
+                        <div class="modo-selector">
+                            <button id="btnAleatorio" class="active">
+                                Aleatória
+                            </button>
+                            <button id="btnPassPhase">
+                                Senha-frase
+                            </button>
+                        </div>
+
+                        <div class="container-output">
+                            <div class="inputbox-password-output">
+                                &tC)8vW[HEJ6V_Si2EA/
+                            </div>
+                            
+                            <button id="btnGerar">Gerar Senha</button>
+
+                            <div class="txt-meta">
+                                <p>-> 100% local & transparente</p>
+                                <p>-> codigo-aberto (MIT)</p>
+                            </div>
+                        </div>
+
+                    
+                    </aside>
                 </div>
 
             </div>
         </section>
 
-        <section class="como-funciona" id="whytrustus">
-            <div class="interface">
-                <div class="img-comofunciona">
-                    <img src="assets/images/dado-csprng.webp" alt="log CSPRNG">
-                </div>
-                <div class="txt-comofunciona">
-                    <h2 class="title-section">Por que <span>confiar?</span></h2>
+        <section class="hero" id="porque-confiar">
+                <div class="interface">
 
-                    <h3>100% offline</h3>
+                    <p class="subtitle">Nossa engenharia</p>
+                    <h2 class="section-title">Por que confiar na abordagem ferlOps</h2>
+                    <p>Ferramentas simples de auditar, funcionamento local sem dependência de terceiros e clareza sobre o que cada solução faz.</p>
 
-                    <p>Todo o processo de geração das senhas ocorre localmente no seu computador, o que garante que nenhuma informação seja transmitida pela rede, eliminando qualquer risco de interceptação.</p>
+                    <div class="grid-features">
 
-                    <h3>Processamento CSPRNG</h3>
-                    <p>O Gerador utiliza fontes de entropia local do seu dispositivo para alimentar nosso algoritmo de geração de números aleatórios criptograficamente seguros (CSPRNG) com letras, números, simbolos que garantem que as senhas tenha alta entropia e sejam impossiveis de prever.</p>
-
-                    <h3>Código aberto</h3>
-                    <p>O código-fonte está disponível para auditoria, permitindo que qualquer pessoa verifique como o programa funciona.</p>
-
-                    <h3>Simples e leve</h3>
-                    <p>Abra o programa, gere uma senha e copie com um clique. Sem configurações desnecessárias.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="modo-senha" id="features">
-            <div class="interface">
-                <h2 class="title-section">Recursos do <span>PasswordG</span></h2>
-
-                <p>O PasswordG possui duas formas de gerar senhas, você pode escolher qual se adequa o seu ambiente.</p>
-
-                <article>
-
-                    <div class="box-mode">
-                        <h3>Modo Senha aleatória</h3>
-                        <p>Utilizada de modo geral em sistemas e aplicativos com letras, números e simbolos com a complexidade máxima é uma solução robusta porém são dificeis de lembrar.</p>
-
-                        <p>ex: &tC)8vW[HEJ6V_Si2EA/</p>
+                        <article class="card">
+                            <h3>100% Offline</h3>
+                            <p>A geração ocorre localmente no dispositivo, sem envio de credenciais ou dados sensiveis pela rede.</p>
+                        </article>
+                        <article class="card">
+                            <h3>CSPRNG Local</h3>
+                            <p>Uso de fontes de entropia do sistema operacional para gerar valores imprevisíveis contra força bruta.</p>
+                        </article>
+                        <article class="card">
+                            <h3>Codigo Aberto</h3>
+                            <p>Transparência real com código auditável sob licença MIT, sem caixas-pretas proprietárias.</p>
+                        </article>
+                        <article class="card">
+                            <h3>Memória Volátil</h3>
+                            <p>Sem históricos salvos em disco ou banco de dados; valores descartados ao fechar.</p>
+                        </article>
+                   
                     </div>
 
-                    <div class="box-mode">
-                        <h3>Modo Senha-frase</h3>
-                        <p>Para humanos. Gera combinações de palavras aleatórias longas, faceis de memorizar e digitar sem perder o poder de proteção contra ataques de força bruta.</p>
 
-                        <p>ex: Animal6-Terra9-Mania0</p>
-                    </div>
-                
-                </article>
-            </div>
+                </div>
         </section>
 
-        <section class="peguntasfreq" id="faq">
+        <section class="hero" id="solucoes">
             <div class="interface">
-                <h2 class="title-section">Alguma pergunta?</h2>
-                <p class="subtitle">Confirma alguma perguntas frequentes que você possa ter.</p>
+
+                <p class="subtitle">Nosso Ecossistema</p>
+                <h2 class="section-title">Solução disponível hoje e próximos lançamentos</h2>
+                <p>O <strong>PasswordG</strong> já está pronto para uso. Outras soluções de segurança estão em desenvolvimento interno.</p>
+
+                 <div class="grid-solutions">
+
+                    <article class="card">
+                        <p class="release-version">Disponível 1.1.5</p>
+                        <h3>ferlOps PasswordG</h3>
+                        <p>Geração offline de senhas complexas e senhas-frase com foco em alta entropia, rapidez e praticidade.</p>
+
+                        <ul>
+                            <li>
+                                <i class="icon-chevron-right"></i> 
+                                Modo Senha Aleatória (letras, números e simbolos)
+                            </li>
+                            <li>
+                                <i class="icon-chevron-right"></i>
+                                 Modo Senha-frase legível para humanos
+                                </li>
+                            <li>
+                                <i class="icon-chevron-right"></i>
+                                Limpeza automática da área de transferência
+                            </li>
+                        </ul>
+
+                        <p class="others-info">Windows (x64) / Estável</p>
+
+                        <a href="https://github.com/higorfernandoeliseo/PasswordGApp/releases/download/v1.1.5/passwordg-setup-x64.exe">
+                            <button id="downloadBtn">Baixar</button>
+                        </a>
+                    </article>
+
+                    <article class="card">
+                        <p class="development-status"> Em desenvolvimento 1.1.6</p>
+                        <h3>ferlOps PasswordG</h3>
+
+                        <ul>
+                            <li>
+                                <i class="icon-chevron-right"></i> 
+                                Correções de bugs e melhorias na interface
+                            </li>
+                            <li>
+                                <i class="icon-chevron-right"></i> 
+                                Adição do Modo PIN para geração rápida de códigos PIN.
+                            </li>
+                            <li>
+                                <i class="icon-chevron-right"></i>
+                                 Suporte para Linux e Mac OS
+                            </li>
+                        </ul>
+
+                        <a href="#">
+                            <button id="downloadBetabtn">Em breve</button>
+                        </a>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="hero" id="faq">
+            <div class="interface">
+
+                <p class="subtitle">Duvidas frequentes</p>
+                <h2 class="section-title">Respostas diretas sobre o PasswordG e a ferlOps</h2>
 
                 <div id="box-accordions">
-
                     <div class="accordion">
                         <button class="accordion-header">
-                            <span>O que é um gerador de senhas?</span>
+                            <span>O ferlOps PasswordG funciona realmente 100% offline?</span>
                             <i class="icon-chevron-down"></i>
                         </button>
                         <div class="accordion-body">
-                            <p>Um gerador de senha é uma ferramenta de segurança que cria automaticamente unicas, aleatórias e complexas - incluindo letras maiúsculas e minúsculas, números e símbolos.</p>
-                            <p>O principal objetivo é proteger contas online contra ataques cibernéticos, como os de força bruta, evitando o uso de senhas fracas e repetitivas.</p>
+                            <p>Sim. A geração das senhas e senhas-frase acontece localmente no seu computador, utilizando entropia do proprio dispositivo via CSPRNG, sem enviar informações pela rede.</p>
                         </div>
                     </div>
-
                     <div class="accordion">
                         <button class="accordion-header">
-                            <span>Como o PasswordG gera senhas se ele funciona offline?</span>
+                            <span>As senhas geradas ficam salvas em algum lugar?</span>
                             <i class="icon-chevron-down"></i>
                         </button>
                         <div class="accordion-body">
-                            <p><strong>Não</strong>. O PasswordG funciona 100% offline. Todo o processo de geração das senhas ocorre localmente no seu computador, utilizando fontes de entropia local do seu dispositivo para alimentar nosso algoritmo de geração de números aleatórios criptograficamente seguros (CSPRNG) que garante que nenhuma informação seja transmitida pela rede, eliminando qualquer risco de interceptação.</p>
+                            <p>Não. O PasswordG não grava histórico em banco de dados nem arquivos de log. Quando copiada pela interface, a senha também é removida da área de transferência após alguns segundos.</p>
                         </div>
                     </div>
-
                     <div class="accordion">
                         <button class="accordion-header">
-                            <span>O aplicativo salva minhas senhas geradas em algum lugar?</span>
+                            <span>Qual a diferença entre Senha Aleatória e Senha-frase?</span>
                             <i class="icon-chevron-down"></i>
                         </button>
                         <div class="accordion-body">
-                            <p><strong>Não</strong>. O PasswordG não possui banco de dados local para armazenamento de senha, nem arquivos de log que registrem o que foi gerado. A senha gerada em memória volatil e assim que você copia ou fecha o aplicativo, ela é descartada do seu sistema. Ao copiar pelo botão na interface após 3 segundos ela é apagada da área de transferencia.</p>
+                            <p>A <strong>Senha Aletória</strong> mistura letras, números e simbolos para máxima complexidade em campos onde você vai copiar e colar. A <strong>Senha-frase</strong> combina palavras de forma longa para facilitar memorização e digitação humana sem abrir mão da resistência a ataques de força bruta.</p>
                         </div>
                     </div>
-
-                    <div class="accordion">
-                        <button class="accordion-header">
-                            <span>Qual é a diferença entre uma "Senha Aleatória" e uma "Senha-frase"?</span>
-                            <i class="icon-chevron-down"></i>
-                        </button>
-                        <div class="accordion-body">
-                            <p>O modo <strong>Senha Aleatória</strong> gera uma senha de alta complexidade misturando letras, números e simbolos (ex: vZK@1*59np), ideal para copia e colar em gerenciadores de senha ou no uso geral.</p>
-                            <p>O modo <strong>Senha-frase</strong> une palavras aleatórias do dicionário de forma longa (ex: Computador-Plus-Brasil). Elas são matemáticamente tão fortes contra ataques de hackers incluindo números quanto as senhas comuns, mas são infinitamente mais fáceis para um ser humano memorizar e digitar.</p>
-                        </div>
-                    </div>
-
                     
                     <div class="accordion">
                         <button class="accordion-header">
-                            <span>O que é entropia de senha?</span>
+                            <span>Os próximos produtos já estão prontos?</span>
                             <i class="icon-chevron-down"></i>
                         </button>
-                        <div class="accordion-body">
-                            <p>A entropia de senha refere-se ao quão imprevisivel sua senha ou frase é, medida em bits. Normalmente quanto mais bits de entropia, mais complexa é a senha e mais dificil é quebrá-la por meio de ataques de força bruta.<br /><br />
-                                Os atacantes de força bruta usam o métodos de tentativa e erro para adivinhar conbinações de caracteres em credenciais de login, senhas e dados de criptografia.<br /><br />
-                                Por exemplo, muitos hackers usam scripts e maquinas complexas para automatizar milhares de tentativas de senhas em poucos minutos. Em um dos casos mais impressionantes, pesquisadores processaram até <a href="https://arstechnica.com/information-technology/2012/12/25-gpu-cluster-cracks-every-standard-windows-password-in-6-hours/">350 bilhoes de tentativas de senha</a> por segundo. (artigo em inglês)</p>
+                            <div class="accordion-body">
+                                <p>Hoje o produto estável disponível é o <strong>ferlOps PasswordG</strong>. Novos módulos e produtos estão em desenvolvimento/implantação, acompanhe em nosso blog.</p>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="accordion">
-                        <button class="accordion-header">
-                            <span>Como posso ter certeza que o software é seguro?</span>
-                            <i class="icon-chevron-down"></i>
-                        </button>
-                        <div class="accordion-body">
-                            <p>Como um projeto de codigo-aberto, o codigo-fonte do PasswordG é transparente, disponível para auditoria no GitHub - Licença MIT. </p><p>Utilizamos algoritmos de geração de números aleatórios criptograficamente seguros (CSPRNG), que garantem que as senhas geradas tenham alta entropia e sejam impossiveis de prever.</p>
-                        </div>
-                    </div>
-
-                    <div class="accordion">
-                        <button class="accordion-header">
-                            <span>Em quais sistemas operacionais ele roda?</span>
-                            <i class="icon-chevron-down"></i>
-                        </button>
-                        <div class="accordion-body">
-                            <p>O PasswordG possui suporte nativo para <strong>Windows</strong> em breve para Linux e macOS, mantendo a mesma experiência de uso e nivel de segurança, independentemente do sistema escolhiido.</p>
-                        </div>
-                    </div>
-
-
+                
                 </div>
+
+            
+
             </div>
         </section>
 
-        <section class="download" id="download">
-           <div class="interface">
-                <h3>Comece a gerar senhas seguras <span>agora!</span></h3>
-                <p>Gratuito, de codigo-aberto e para Windows.</p>
-                
-                <div class="tags-info">
-                    <span>100% offline</span>
-                    <span>v.1.1.5</span>
-                    <span>open-source · MIT</span>
-                    <span>Windows 10 ou 11 (64-bit)</span>
+        <section class="hero" id="theteam">
+            <div class="interface">
+
+                <p class="subtitle">A equipe</p>
+                <h2 class="section-title">A equipe da ferlOps é formada por</h2>
+
+                <div class="grid-team">
+
+                        <article class="card">
+                            <h3>@higorfernandoeliseo</h3>
+                            <p>Responsável pelo desenvolvimento e manutenção do PasswordG e das próximas soluções do ecossistema. Foco em software enxuto, criptografia aplicada e transparência via código aberto.</p>
+
+                            <a target="_blank" href="https://github.com/higorfernandoeliseo">
+                                <button>Github</button>
+                            </a>    
+                        </article>
+
                 </div>
 
-                <button><a href="https://github.com/higorfernandoeliseo/PasswordGApp/releases/download/v1.1.5/passwordg-setup-x64.exe" target="_blank">Baixar grátis para Windows <i class="icon-downloa"></i></a></button>
-           </div>
+                <h3>Nosso canais de atendimento:</h3>
+
+                <ul class="lista-clean">
+                    <li>
+                        <i class="icon-chevron-right"></i> 
+                        <strong>Bugs e Sugestões Tecnicas:</strong> abra uma <em>issue</em> ou discussão no repositório oficial no GitHub.
+                    </li>
+                    <li>
+                        <i class="icon-chevron-right"></i> 
+                        <strong>Novas Versões:</strong> acompanhe em nosso site ou pela aba release no Github.
+                    </li>
+                </ul>
+
+            </div>
         </section>
 
     </main>
@@ -230,16 +281,15 @@
     <footer>
         <div class="interface">
             <div class="logo-footer">
-                <img src="assets/images/logo-ferlops-footer.webp" alt="">
-                <p></p>
-                <p>&copy; 2026 ferlOps Tecnologia. Todos os direitos reservados - Leia a nossa <a href="policy-privacy.html" target="_blank">Politica de Privacidade</a></p>
+                <img src="assets/images/logo-ferlops.webp" alt="logotipo ferlOps do Footer">
+                <p>&copy; 2026 ferlOps Tecnologia. Todos os direitos reservados.</p>
             </div>
-            <div class="appinfo">
-                <p>Feito com ❤️ por <a href="https://github.com/higorfernandoeliseo" target="_blank">Igor Eliseo</a></p>
+            <div class="authorpage">
+                <p><em>Soluções em Segurança Open Source.</em></p>
+                <p>Desenvolvido por <a target="_blank" href="https://github.com/higorfernandoeliseo">Igor Eliseo</a></p>
             </div>
         </div>
     </footer>
-  
 
     <script src="assets/js/web.js"></script>
 </body>

@@ -1,0 +1,739 @@
+@font-face {
+    font-family: 'Inter';
+    font-weight: normal;
+    src: url('fonts/Inter-Regular.woff2');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: 600;
+    src: url('fonts/Inter-Medium.woff2');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: 700;
+    src: url('fonts/Inter-Bold.woff2');
+}
+
+@font-face {
+    font-family: 'Sora';
+    font-weight: 800;
+    src: url('fonts/Sora-ExtraBold.woff2');
+}
+
+@font-face {
+    font-family: 'Sora';
+    font-weight: 700;
+    src: url('fonts/Sora-Bold.woff2');
+}
+
+@font-face {
+    font-family: 'JBMono';
+    font-weight: normal;
+    src: url('fonts/JetBrainsMono-Regular.woff2');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --bg-base: #0a0c10;
+    --bg-card: #151a23;
+    --border-1: #242b38;
+    --corTexto1: #fff;
+    --text-primary: #f1f5f9;
+    --text-secondary: #9aa5b6;
+    --accent: #ff2a2a;
+    --accent-dark: rgba(255, 42, 42, 0.14);
+    --green-card-text: #4ade80;
+    --brd-green-card-text: #4ade80;
+    --bg-green-card-text: rgba(74, 222, 128, 0.14);
+    --bg-yellow-card: rgba(251, 191, 36, 0.14);
+    --yellow-card-text: #fbbf24;
+    --brd-yellow-card: #fbbf24;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-base);
+}
+
+.interface {
+    max-width: 1280px;
+    padding: 0 4%;
+    margin: 0 auto;
+}
+
+h1.title-section {
+    font-family: 'Sora';
+    font-size: 4rem;
+    color: var(--corTexto1);
+    padding-bottom: 20px;
+}
+
+/* Estilo do cabeçalho */
+
+header {
+    background: var(--bg-base);
+    padding: 17px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    border-bottom: 1px solid var(--border-1);
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logotipo-head img {
+    margin-top: 5px;
+    max-width: 100px;
+}
+
+/* Estilo do menu em modo desktop */
+
+header nav.menu-desktop ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 36px;
+}
+
+header nav.menu-desktop a {
+    font-family: 'Inter';
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.88rem;
+}
+
+header nav.menu-desktop a:hover {
+    color: var(--text-primary);
+}
+
+header nav.menu-desktop a button.contact-btn {
+    width: 94px;
+    height: 38px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--accent);
+    color: var(--corTexto1);
+    cursor: pointer;
+}
+
+/* Estilo do menu em modo mobile */
+
+.btn-menu-mobile {
+    display: none;
+}
+
+.btn-menu-mobile i {
+    font-size: 2rem;
+    color: var(--text-secondary);
+}
+
+.menu-mobile.abrir-menu {
+    left: 0;
+    pointer-events: initial;
+}
+
+.menu-mobile {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-card);
+    text-align: right;
+    padding: 32px 0;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.menu-mobile ul {
+    list-style: none;
+    padding: 64px 0;
+}
+
+.menu-mobile ul li a {
+    color: var(--text-secondary);
+    font-size: 1.4rem;
+    text-decoration: none;
+    display: block;
+    padding: 24px;
+    transition: .2s;
+    outline: none;
+}
+
+.menu-mobile ul li a:hover {
+    color: var(--text-primary);
+}
+
+.menu-mobile .icon-x {
+    font-size: 2rem;
+    color: var(--text-primary);
+    padding: 24px;
+}
+
+.menu-mobile ul li a button.contact-btn {
+    width: 94px;
+    height: 38px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--accent);
+    color: var(--corTexto1);
+    cursor: pointer;
+}
+
+section.hero {
+    padding: 64px 0;
+}
+
+/* Estilo do hero inicio */
+
+section.hero#inicio {
+    padding-top: 144px;
+    padding-bottom: 114px;
+    border: 1px solid var(--border-1);
+}
+
+section#inicio > .interface {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
+
+section#inicio .txt-hero h1 {
+    font-family: 'Sora';
+    font-size: 2.2rem;
+    color: var(--corTexto1);
+    line-height: 1.16;
+    margin-bottom: 16px;
+}
+
+section#inicio .txt-hero p {
+    color: var(--text-secondary);
+    margin: 24px 0;
+    line-height: 1.6;
+}
+
+section#inicio .txt-hero span.highlight {
+    color: var(--accent);
+}
+
+section#inicio .txt-hero button {
+    padding: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--accent);
+    color: var(--corTexto1);
+    cursor: pointer;
+}
+
+div#preview-software {
+    border: 1px solid var(--border-1);
+    border-radius: 13px;
+    padding: 20px;
+    background-color: var(--bg-card);
+}
+
+div#preview-software h2.title-application {
+    font-family: 'Sora';
+    color: var(--corTexto1);
+    font-size: 20px;
+}
+
+div#preview-software p.description {
+    color: var(--text-secondary);
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+div#preview-software div.modo-selector {
+    display: flex;
+    width: 100%;
+    margin: 5px 0;
+}
+
+div#preview-software div.modo-selector button {
+    flex: 1;
+    padding: 6px 10px;
+    align-items: center;
+    margin: 0 5px;
+    border: 1px solid var(--border-1);
+    border-radius: 6px;
+    color: var(--text-secondary);
+    background: transparent;
+    font-family: 'JBMono';
+    cursor: pointer;
+}
+
+div#preview-software div.modo-selector button.active {
+    border-color: var(--accent);
+    background-color: var(--accent-dark);
+    color: var(--corTexto1);
+}
+
+div.inputbox-password-output {
+    display: flex;
+    background-color: var(--bg-base);
+    font-family: 'JBMono';
+    font-size: 14px;
+    padding: 18px 10px;
+    margin: 15px 2px;
+    border-radius: 10px;
+    color: var(--text-primary);
+    border: 1px solid var(--border-1);
+}
+
+button#btnGerar {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    background-color: var(--accent);
+    color: var(--text-primary);
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+div.txt-meta {
+    color: var(--text-secondary);
+    margin: 15px 0;
+}
+
+div.txt-meta p {
+    font-family: 'JBMono';
+    font-size: 14px;
+}
+
+/* Estilo da seção porque confiar? */
+
+section.hero#porque-confiar {
+    padding-top: 144px;
+    padding-bottom: 114px;
+    border: 1px solid var(--border-1);
+}
+
+
+section.hero#porque-confiar h2 {
+    color: var(--text-primary);
+    font-family: 'Sora';
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 16px;
+}
+
+section.hero#porque-confiar p {
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+
+section.hero#porque-confiar p.subtitle {
+    font-family: 'JBMono';
+    color: var(--accent);
+}
+
+section.hero#porque-confiar div.grid-features,
+section.hero#theteam div.grid-team {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    min-width: 100px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+article.card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    border: 1px solid var(--border-1);
+    background-color: var(--bg-card);
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s;
+}
+
+div.grid-team article.card h3 {
+    font-family: 'Sora';
+    color: var(--text-primary);
+}
+
+article.card p {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+article.card:hover {
+    border-color: var(--text-secondary);
+}
+
+article.card button {
+    margin-top: auto;
+    border: 1px solid var(--border-1);
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 0;
+    color: var(--text-primary);
+    background-color: var(--bg-card);
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+article.card h3 {
+    color: var(--text-primary);
+}
+
+ul.lista-clean li {
+    list-style: none !important;
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 15px 0;
+}
+
+ul.lista-clean li i {
+    color: red;
+}
+
+/* Estilo da seção nossas solucoes? */
+
+section.hero#solucoes {
+    padding: 64px 0;
+    border: 1px solid var(--border-1);
+}
+
+section#solucoes > .interface {
+    display: flex;
+    flex-direction: column;
+}
+
+section.hero#solucoes h2 {
+    color: var(--text-primary);
+    font-family: 'Sora';
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 16px;
+}
+
+section.hero#solucoes p {
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+
+section.hero#solucoes p.subtitle {
+    font-family: 'JBMono';
+    color: var(--accent);
+}
+
+/* Estilo dos cards de nossas solucoes */
+
+section.hero#solucoes div.grid-solutions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    min-width: 100px;
+    width: 100%;
+}
+
+div.grid-solutions article.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    border: 1px solid var(--border-1);
+    background-color: var(--bg-card);
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s;
+}
+
+div.grid-solutions article.card h3 {
+    font-family: 'Sora';
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+div.grid-solutions article.card p {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+div.grid-solutions article.card p.release-version {
+    font-family: 'JBMono';
+    font-size: 13px;
+    padding: 3px 8px;
+    border: 1px solid var(--brd-green-card-text);
+    background-color: var(--bg-green-card-text);
+    color: var(--green-card-text) !important;
+    border-radius: 8px;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.grid-solutions article.card p.development-status {
+    font-family: 'JBMono';
+    font-size: 13px;
+    padding: 3px 8px;
+    border: 1px solid var(--brd-yellow-card);
+    background-color: var(--bg-yellow-card);
+    color: var(--yellow-card-text) !important;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+div.grid-solutions article.card:hover {
+    border-color: var(--text-secondary);
+}
+
+div.grid-solutions article.card p.others-info {
+    font-family: 'JBMono';
+    font-size: 13px;
+}
+
+div.grid-solutions article.card button {
+    border: 1px solid var(--border-1);
+    background-color: var(--bg-card);
+    padding: 10px;
+    border-radius: 8px;
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 700;
+}
+
+div.grid-solutions article.card button:hover {
+    background-color: var(--accent);
+
+}
+
+
+div.grid-solutions article.card a button#downloadBtn,
+div.grid-solutions article.card a button#downloadBetabtn {
+    width: 100%;
+}
+
+div.grid-solutions article.card ul li {
+    list-style: none !important;
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 15px 0;
+}
+
+div.grid-solutions article.card ul li i {
+    color: red;
+}
+
+
+section.hero#faq {
+    padding-top: 144px;
+    padding-bottom: 114px;
+    border: 1px solid var(--border-1);
+}
+
+section#faq > .interface {
+    display: flex;
+    flex-direction: column;
+}
+
+section.hero#faq h2 {
+    color: var(--text-primary);
+    font-family: 'Sora';
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 16px;
+}
+
+section.hero#faq p {
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+
+section.hero#faq p.subtitle {
+    font-family: 'JBMono';
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+section.hero#faq .interface div#box-accordions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Estilo das caixas accordion do FAQ */
+
+div#box-accordions {
+    margin-top: 12px;
+}
+
+div#box-accordions .accordion {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-1);
+    border-radius: 12px;
+    cursor: pointer;
+    outline: none;
+    padding: 10px;
+}
+
+.accordion .accordion-header {
+    width: 100%;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.accordion .accordion-header span {
+    max-width: 100%;
+    white-space: normal;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: clip;
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+.accordion .accordion-header i {
+    color: var(--accent);
+}
+
+.accordion .accordion-body {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.accordion .accordion-body p {
+    line-height: 1.6;
+}
+
+.accordion .accordion-body p a {
+    color: var(--text-primary);
+}
+
+.accordion .accordion-body.active {
+    margin: 10px;
+    height: auto;
+    opacity: 1;
+}
+
+/* Estilo da seção da equipe */
+
+section.hero#theteam {
+    padding-top: 144px;
+    padding-bottom: 114px;
+    border: 1px solid var(--border-1);
+}
+
+section#theteam > .interface {
+    display: flex;
+    flex-direction: column;
+}
+
+section.hero#theteam h2 {
+    color: var(--text-primary);
+    font-family: 'Sora';
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 16px;
+}
+
+section.hero#theteam h3 {
+    color: var(--text-primary);
+    margin-top: 20px;
+}
+
+section.hero#theteam p {
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+
+section.hero#theteam p.subtitle {
+    font-family: 'JBMono';
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+section.hero#theteam button {
+    align-self: flex-start;
+    width: auto;
+    padding: 8px 16px;
+}
+
+section.hero#theteam button:hover {
+    background-color: var(--bg-base);
+}
+
+
+/* Estilo do rodapé */
+
+footer {
+    background-color: var(--bg-card);
+    padding: 40px 0;
+    color: var(--text-secondary);
+}
+
+footer > .interface {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div.logo-footer img {
+    margin-top: 5px;
+    max-width: 100px;
+}
+
+footer p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+footer div.authorpage p {
+    font-family: 'JBMono';
+    font-size: 0.9rem;
+}
+
+footer a {
+    text-underline-offset: 0.3rem;
+    color: var(--text-primary);
+}
