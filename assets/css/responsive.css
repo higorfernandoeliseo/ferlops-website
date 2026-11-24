@@ -28,5 +28,12 @@
         gap: 32px;
         text-align: center;
     }
+	
+	footer div.logo-footer div.copyright {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 
 }

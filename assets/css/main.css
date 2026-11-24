@@ -749,6 +749,14 @@ footer p {
     line-height: 1.6;
 }
 
+footer div.logo-footer div.copyright {
+	display: flex;
+}
+
+footer div.logo-footer div.copyright p {
+	margin:0 14px 0 0;
+}
+
 footer div.authorpage p {
     font-family: 'JBMono';
     font-size: 0.9rem;
